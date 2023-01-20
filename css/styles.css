@@ -414,9 +414,6 @@ img {
 .customers-link:hover .customers-icon {
   fill: var(--main-bgr-color);
 }
-.custumers-icon {
-  fill: #8e8f99;
-}
 
 /* FOOTER */
 
