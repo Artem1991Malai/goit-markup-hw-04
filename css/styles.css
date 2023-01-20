@@ -182,6 +182,33 @@ img {
   background-color: var(--main-bgr-color);
 }
 
+.products-logo {
+  display: flex;
+  justify-content: center;
+}
+.products-items {
+  display: flex;
+  justify-content: center;
+}
+.products-item {
+  margin-right: 24px;
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 4px;
+  background-color: var(--logo-color);
+  margin-bottom: 8px;
+}
+.products-item:last-child {
+  margin-right: 0;
+}
+.products-icon {
+  width: 264px;
+  height: 112px;
+  padding: 24px 100px;
+}
+.products-icon {
+  fill: var(--main-title-color);
+}
+
 .products {
   padding-top: 120px;
 }
@@ -190,6 +217,7 @@ img {
   justify-content: center;
   align-items: baseline;
 }
+
 .products-list {
   margin-right: 24px;
   flex-basis: calc((100% - 72px) / 4);
@@ -405,23 +433,29 @@ img {
 .customers-icon {
   fill: #8e8f99;
 }
-/* .customers-link:hover,
+.customers-link:hover,
 .customers-link:focus {
-  border: 1px solid var(--main-bgr-color)
-  background-color: var(--main-bgr-color);
-} */
+  border: 1px solid var(--main-bgr-color);
+}
 
 .customers-link:hover .customers-icon {
   fill: var(--main-bgr-color);
 }
 
 /* FOOTER */
+.footer-desc {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer-social {
   display: flex;
-  margin-right: 120px;
+  gap: 120px;
 }
 
+.footer-logo-item {
+  max-width: 264px;
+}
 .accent {
   color: var(--third-title-color);
 }
@@ -470,24 +504,34 @@ img {
 .logo-head-portfolio {
   border-bottom: 1px solid var(--logo-text-color);
 }
-.footer-desc {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-social-media {
-  display: flex;
-  align-items: baseline;
-}
 
 .social-media-list {
-  margin-top: 16px;
+  display: flex;
   gap: 16px;
+  max-width: 210px;
+}
+
+.social-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: #31d0aa;
+}
+.social-media-icon {
+  fill: var(--logo-color);
 }
 
 .social-media-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  margin-top: 16px;
 }
