@@ -44,9 +44,6 @@ img {
 }
 
 .list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
 }
 
@@ -153,6 +150,9 @@ img {
     ),
     url(../images/people-office.jpg);
   background-color: var(--main-title-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -185,46 +185,49 @@ img {
 .products-logo {
   display: flex;
   justify-content: center;
+  padding: 24px 100px;
 }
 .products-items {
   display: flex;
   justify-content: center;
 }
-.products-item {
-  margin-right: 24px;
-  flex-basis: calc((100% - 72px) / 4);
+.products-icon-bgr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
   border-radius: 4px;
   background-color: var(--logo-color);
-  margin-bottom: 8px;
 }
 .products-item:last-child {
   margin-right: 0;
 }
+
 .products-icon {
-  width: 264px;
-  height: 112px;
-  padding: 24px 100px;
-}
-.products-icon {
+  width: 64px;
+  height: 64px;
   fill: var(--main-title-color);
 }
 
 .products {
   padding-top: 120px;
+  padding-bottom: 0;
 }
 .products-main {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  gap: 24px;
+  padding-bottom: 0;
 }
 
 .products-list {
-  margin-right: 24px;
   flex-basis: calc((100% - 72px) / 4);
 }
 
 .products-list:last-child {
   margin-right: 0;
+}
+.products-title {
+  padding-top: 8px;
 }
 
 .products-title,
@@ -254,6 +257,9 @@ img {
 }
 
 .title-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 72px;
 }
 
@@ -281,6 +287,9 @@ img {
   background-color: var(--logo-color);
 }
 .team-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 72px;
 }
 .team-list {
@@ -337,6 +346,9 @@ img {
 }
 
 .button-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 72px;
   border-radius: 4px;
 }
