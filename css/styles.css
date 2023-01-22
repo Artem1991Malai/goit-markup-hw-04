@@ -388,6 +388,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  color: var(--main-title-color);
 }
 .ptf-text {
   font-size: 16px;
