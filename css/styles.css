@@ -143,6 +143,9 @@ img {
 /* STUDIO */
 
 .hero {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -230,7 +233,7 @@ img {
   margin-right: 0;
 }
 .products-title {
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .products-title,
@@ -451,17 +454,15 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   padding: 16px 32px;
+  color: #8e8f99;
 }
 .customers-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid var(--main-bgr-color);
-}
-
-.customers-link:hover .customers-icon {
-  fill: var(--main-bgr-color);
+  border-color: var(--main-bgr-color);
+  color: var(--main-bgr-color);
 }
 
 /* FOOTER */
