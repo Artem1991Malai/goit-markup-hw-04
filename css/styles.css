@@ -298,7 +298,8 @@ img {
   align-items: center;
   margin-top: 72px;
 }
-.team-list {
+.team-list,
+.social-list-item {
   margin-right: 24px;
 }
 .team-list {
@@ -310,7 +311,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list:last-child {
+.team-list:last-child,
+.social-list-item:last-child {
   margin-right: 0;
 }
 
@@ -322,7 +324,6 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
   margin-top: 8px;
 }
 
